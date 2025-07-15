@@ -6,6 +6,9 @@ import { ClerkProvider } from "@clerk/nextjs";
 import { shadesOfPurple } from "@clerk/themes";
 import "react-day-picker/dist/style.css";
 import { Toaster } from "sonner";
+import dynamic from "next/dynamic";
+
+const VoiceAssistant = dynamic(() => import("../components/VoiceAssistant"), { ssr: false });
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -45,6 +48,7 @@ export default function RootLayout({ children }) {
               </div>
             </footer>
           </ThemeProvider>
+          <VoiceAssistant />
         </body>
       </html>
     </ClerkProvider>
