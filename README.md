@@ -1,4 +1,4 @@
- WorkOrbit 
+ ### WorkOrbit 
 
 > Built with **Next.js**, **Shadcn UI**, and **PostgreSQL**
 
@@ -41,4 +41,5 @@ A full-featured project management app inspired by tools like Linear and Jira. T
 | Drag & Drop    | DnD Kit / Custom Logic         |
 
 ---
+
 
