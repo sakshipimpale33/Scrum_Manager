@@ -1,60 +1,44 @@
-WorkOrdbit – Built with Next.js, Shadcn UI, and PostgreSQL
-A full-featured project management app inspired by modern tools like Linear and Jira. This app supports organization management, sprint planning, issue tracking with Kanban board, user authentication, protected routes, and full CRUD operations.
+ WorkOrbit 
 
-🖼️ Project Features
-🧑‍💻 User Authentication & Onboarding
+> Built with **Next.js**, **Shadcn UI**, and **PostgreSQL**
 
-🏢 Organization & Project Creation
+A full-featured project management app inspired by tools like Linear and Jira. This app supports:
 
-🏗️ Database Modeling with Prisma
+- Organization management
+- Sprint planning
+- Issue tracking with a Kanban board
+- User authentication
+- Protected routes
+- Full CRUD operations
 
-📊 Kanban Board for Issues
+---
 
-🗃️ Sprint Management
+## 🖼️ Project Features
 
-🔒 Protected Routes with Middleware
+- 🧑‍💻 **User Authentication & Onboarding**
+- 🏢 **Organization & Project Creation**
+- 🏗️ **Database Modeling with Prisma**
+- 📊 **Kanban Board for Issues**
+- 🗃️ **Sprint Management**
+- 🔒 **Protected Routes with Middleware**
+- 🎛️ **Server Actions & Custom Hooks**
+- 🧹 **Issue Filtering, Editing, Drag & Drop**
+- 📁 **Fully Responsive UI with Shadcn/UI**
+- 🚀 **Deployment Ready**
 
-🎛️ Server Actions & Custom Hooks
+---
 
-🧹 Issue Filtering, Editing, Drag & Drop
+## 🧱 Tech Stack
 
-📁 Fully Responsive UI with Shadcn/UI
+| Category        | Tech                          |
+|----------------|-------------------------------|
+| Frontend       | Next.js 14 (App Router)        |
+| UI Components  | Shadcn/UI + Tailwind CSS       |
+| Backend        | Server Actions (Next.js)       |
+| Database       | PostgreSQL + Prisma ORM        |
+| Auth           | Clerk    
+| Deployment     | Vercel     
+| Drag & Drop    | DnD Kit / Custom Logic         |
 
-🚀 Deployment Ready
+---
 
-
-📦 Setup Instructions
-1. Clone the Repository
-bash
-Copy
-Edit
-git clone https://github.com/your-username/project-management-app.git
-cd project-management-app
-2. Install Dependencies
-bash
-Copy
-Edit
-npm install
-
- Configure Environment Variables
-Create a .env file in the root directory and add:
-
-env
-Copy
-Edit
-DATABASE_URL=postgresql://user:password@localhost:5432/dbname
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=...
-CLERK_SECRET_KEY=...
-(Replace with your actual credentials)
-
-4. Setup the Database
-bash
-Copy
-Edit
-npx prisma generate
-npx prisma migrate dev --name init
-5. Run the Development Server
-bash
-Copy
-Edit
-npm run dev
